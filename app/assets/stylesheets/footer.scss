@@ -1,0 +1,38 @@
+.opening {
+  background-color:black;
+  color:#ff9900;
+  text-shadow: none;
+  margin-bottom: 0px;
+  line-height: 1;
+
+  .col-md-4 {
+    padding: 15px;
+  }
+}
+
+.contact {
+  background-color: #ff9900 ;
+  text-shadow: none;
+  margin-bottom: 0px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  line-height: 0.5;
+
+  a {
+    color:black;
+  }
+
+  a:hover {
+    color:white;
+  }
+
+  .fab {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .fab:hover {
+    color:white;
+  }
+}
+

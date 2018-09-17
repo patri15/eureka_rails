@@ -1,0 +1,38 @@
+.container-fluid.jumbotron-wrapper
+  %nav.navbar.navbar-expand-md.main-navbar.navbar-dark.fixed-top
+    .container
+      %a.navbar-brand.mb-0.h1{:href => "/"}
+        .row
+          %img.nav-logo{:alt => "logo", :src => "https://cdn.onlinewebfonts.com/svg/img_255075.png", :style => "height:50px;width:50px;"}/
+          %span.nav-title
+            EUREKA
+            %br/
+            CAFFE
+      %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+        %span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        %ul.navbar-nav.ml-auto.detail
+          %li.nav-item
+            = link_to "Home", root_path, class: "nav-link active", id: 'hover-bg'
+          %li.nav-item.d-none.d-lg-block.d-xl-block
+            %i.fas.fa-circle
+          %li.nav-item
+            -# %i.fas.fa-shopping-cart{:href => carts_path}
+          -# %li.nav-item.d-none.d-lg-block.d-xl-block
+          -#   %i.fas.fa-circle
+          -# %li.nav-item
+          -#   = link_to "Service", service_path, class: "nav-link  active", id: 'hover-bg'
+          -# %li.nav-item.d-none.d-lg-block.d-xl-block
+          -#   %i.fas.fa-circle
+          -# %li.nav-item
+          -#   = link_to "Blog", blog_path, class: "nav-link  active", id: 'hover-bg'
+          -# %li.nav-item.d-none.d-lg-block.d-xl-block
+          -#   %i.fas.fa-circle
+          -# %li.nav-item
+          -#   = link_to "Contacts", contacts_path, class: "nav-link  active", id: 'hover-bg'
+          -# %li.nav-item.d-none.d-lg-block.d-xl-block
+          -#   %i.fas.fa-circle
+  .jumbotron.text-center
+    %h1 Ordering food
+    %i.fas.fa-utensils
+    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit

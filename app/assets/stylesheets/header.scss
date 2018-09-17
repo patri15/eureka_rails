@@ -1,0 +1,83 @@
+.jumbotron-wrapper {
+  margin-bottom: 0px;
+  background: transparent;
+  color:white;
+  text-shadow: 2px 2px 4px gray;
+  padding-top: 100px;
+  background-image: url("https://www.passionclub.ro/upload/slider/slider-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .h1 {
+    padding-top: 30px;
+  }
+}
+
+.jumbotron-wrapper img {
+  width: 80%;
+  height: auto;
+}
+
+.jumbotron {
+  background-color: transparent;
+}
+.container {
+  background: transparent;
+}
+
+#hover-bg:hover {
+  color:#ff9900;
+  text-shadow: 0 0 3px black;
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+.navbar-brand {
+  text-align: left;
+  line-height: 1;
+  text-shadow: none;
+}
+
+.nav-title {
+  padding-top: none;
+  padding-left: 10px;
+  transition: transform .2s;
+}
+
+.nav-title:hover{
+  color:#ff9900;
+  text-shadow: 0 0 3px black;
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+.nav-item{
+  text-shadow: none;
+  transition: transform .2s;
+}
+
+.fa-circle {
+  color:#ff9900;
+  font-size: 5px;
+}
+
+.d-none {
+  padding-top: 5px;
+}
+
+.scrolled {
+  background-color: black;
+}
+
+.nav-menu {
+  color: white;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.fa-shopping-cart {
+  padding-top: 10px;
+}
