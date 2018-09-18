@@ -5,7 +5,7 @@ $( document ).on('turbolinks:load', function() {
          if ($(this).scrollTop() > 30) {
             navbarTop.addClass("scrolled");
          }
-         else if($(this).scrollTop() < 30) {
+         else {
             navbarTop.removeClass("scrolled");
          }
       });

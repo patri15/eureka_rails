@@ -260,7 +260,7 @@ DEPENDENCIES
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
   coffee-script-source
-  devise
+  devise (~> 4.2)
   faker (= 1.7.3)
   guard (= 2.13.0)
   guard-minitest (= 2.4.4)

@@ -7,10 +7,10 @@ Rails.application.routes.draw do
   end
 
   devise_for :users
-  root to: 'home#index'
-  get '/cart', to: 'carts#show'
   resources :products
   resources :order_items
   resource :carts, only: [:show]
 
+  get '/cart', to: 'carts#show'
+  root to: 'home#index'
 end

@@ -42,7 +42,7 @@ module Api
       private
 
         def product_params
-          params.permit(:name, :price, :descrption)
+          params.permit(:name, :price, :description)
         end
     end
   end
