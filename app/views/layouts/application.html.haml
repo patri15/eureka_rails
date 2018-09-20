@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title= full_title(yield(:title))
+    = csrf_meta_tags
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %meta{:content => "Patricia Ciortea", :name => "author"}/
+    %link{:href => "https://cdn.onlinewebfonts.com/svg/img_255075.png", :rel => "icon", :type => "image/x-icon"}/
+    %link{:crossorigin => "anonymous", :href => "https://use.fontawesome.com/releases/v5.1.0/css/all.css", :integrity => "sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt", :rel => "stylesheet"}/
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    - render 'partials/shim'
+  %body
+    = render 'partials/header'
+    = render 'partials/alerts'
+    = yield
+    = render 'partials/footer'

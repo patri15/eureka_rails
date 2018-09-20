@@ -1,0 +1,25 @@
+%h1 Products
+= link_to "New product", new_product_path
+.col-md-6.col-md-offset-3
+  %table.table
+    %thead
+      %tr
+        %th Image
+        %th Title
+        %th Description
+        %th Price
+        %th Category
+        %th Vegetarian
+        %th Action
+    %tbody
+      - @products.each do |product|
+        %tr
+          %td= image_tag(product.image)
+          %td= product.title
+          %td= product.description
+          %td= product.price
+          %td
+          %td
+          %td
+            = link_to "Edit", edit_product_path(product)
+            = link_to "Delete", product_path(product), method: :delete
