@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :products
   resources :order_items
-  resource :carts, only: [:show]
+  resources :carts, only: [:show]
 
   get '/cart', to: 'carts#show'
   root to: 'home#index'

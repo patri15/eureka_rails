@@ -38,21 +38,13 @@
   text-align: left;
   line-height: 1;
   text-shadow: none;
-}
 
-.nav-title {
-  padding-top: none;
-  padding-left: 10px;
-  transition: transform .2s;
-  display: block;
-}
-
-.nav-title:hover{
-  color:#ff9900;
-  text-shadow: 0 0 3px black;
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1);
+  .nav-title {
+    padding-top: none;
+    padding-left: 10px;
+    transition: transform .2s;
+    display: block;
+  }
 }
 
 .nav-item{

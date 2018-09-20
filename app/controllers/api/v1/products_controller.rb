@@ -4,6 +4,39 @@ module Api
 
       def index
         products = Product.all
+
+        #description
+        if params[:description].present?
+          products = Product.where(description: params[:description])
+        else
+          products
+        end
+
+        #category
+        if params[:category].present?
+          products = Product.where(category: params[:category])
+        else
+          products
+        end
+
+        #vegetarian
+        if params[:vegetarian].present?
+          products = Product.where(vegetarian: params[:vegetarian])
+        else
+          products
+        end
+
+        #price
+        if params[:price].present?
+          if params[:price] == 'true'
+            products = products.order(price: :asc)
+          else
+            products =products.order(price: :desc)
+          end
+        else
+          products
+        end
+
         render json: {status: 'SUCCES', message: 'Loaded products', data: products}, status: :ok
       end
 
