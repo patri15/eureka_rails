@@ -14,8 +14,8 @@
       = f.number_field :price, value: 1, class: 'form-control', min: 1
     .form-group
       = f.label :price, "Category"
-      = f.number_field :category, class: 'form-control'
+      = f.text_field :category, class: 'form-control'
     .form-group
       = f.label :price, "Vegetarian"
-      = f.number_field :vegetarian, class: 'form-control'
+      = f.text_field :vegetarian, class: 'form-control'
     = f.submit "Save", class: 'btn btn-success'
